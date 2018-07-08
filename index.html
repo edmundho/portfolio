@@ -140,12 +140,12 @@
 								<div class="container">
 									<h3>contact me</h3>
 									<p>Feel free to contact me about anything! I'm always interested in hearing about open software developer positions. Front-end, backend, full-stack, or DevOps!</p>
-									<form method="post" action="#">
+									<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbyVAeafHHysN4ikgAe9SrIM1Fd5saYO8Ax7A7IS/exec">
 										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Your Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email" /></div>
 											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-12"><textarea name="message" id="message" placeholder="Your Message" rows="6"></textarea></div>
 											<div class="col-12">
 												<ul class="actions">
 													<li><input type="submit" class="primary" value="Send Message" /></li>
@@ -154,6 +154,10 @@
 											</div>
 										</div>
 									</form>
+									<div id="thankyou_message">Thank you for getting in contact! I'll respond as promptly as I can.
+										<br><br>
+										<p id="send-another">Or send another message!</p>
+									</div>
 								</div>
 							</section>
 
@@ -509,6 +513,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+			<script type="text/javascript" src="send-another.js"></script>
 	</body>
 </html>
