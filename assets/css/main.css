@@ -2653,6 +2653,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.features article h4:hover {
+				color: steelblue;
+			}
+
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
