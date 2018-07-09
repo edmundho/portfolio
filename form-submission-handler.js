@@ -78,13 +78,13 @@
       }
     } else {
       disableAllButtons(event.target);
-      var url = event.target.action; //
+      var url = event.target.action; 
       var xhr = new XMLHttpRequest();
       xhr.open('POST', url);
       // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function () {
-        console.log(xhr.status, xhr.statusText)
+        console.log(xhr.status, xhr.statusText);
         console.log(xhr.responseText);
         document.getElementById("gform").style.display = "none"; // hide form
         var thankYouMessage = document.getElementById("thankyou_message");
@@ -95,8 +95,8 @@
       };
       // url encode form data for sending as post data
       var encoded = Object.keys(data).map(function (k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
-      }).join('&')
+        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      }).join('&');
       xhr.send(encoded);
     }
   }
@@ -106,7 +106,7 @@
     // bind to the submit event of our form
     var form = document.getElementById("gform");
     form.addEventListener("submit", handleFormSubmit, false);
-  };
+  }
   document.addEventListener("DOMContentLoaded", loaded, false);
 
   function disableAllButtons(form) {
