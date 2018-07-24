@@ -4169,3 +4169,7 @@ ul.feature-icons li:before {
 	cursor: pointer;
 	color: steelblue;
 }
+
+#banner > .inner a {
+	color: gold;
+}
